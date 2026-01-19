@@ -80,7 +80,7 @@ const Services = () => {
                 </div>
             </section>
 
-            <section className="packages bg-light">
+            <section id="packages" className="packages bg-light">
                 <div className="container">
                     <div className="section-header text-center">
                         <h2>Retreat Packages for Instructors</h2>

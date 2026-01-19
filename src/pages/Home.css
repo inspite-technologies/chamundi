@@ -80,7 +80,7 @@ h3 {
 }
 
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     /* Larger, elegant text */
     margin-bottom: 1rem;
     font-weight: 700;
@@ -145,7 +145,7 @@ h3 {
 }
 
 .section-header h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: var(--primary-dark);
     margin-bottom: 0.5rem;
 }
@@ -171,7 +171,8 @@ h3 {
 /* FIX: Card Style */
 .offer-card-enhanced {
     background: var(--white);
-    border-radius: 12px;
+    border-radius: 0;
+    /* Square shape normal */
     overflow: hidden;
     /* Keeps image zoom inside */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -188,9 +189,10 @@ h3 {
 }
 
 .offer-img {
-    height: 220px;
-    /* Increased height for better visual */
     width: 100%;
+    aspect-ratio: 1/1;
+    /* Square images */
+    height: auto;
     overflow: hidden;
 }
 
@@ -226,7 +228,8 @@ h3 {
 }
 
 .offer-header h3 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    /* Smaller title */
     margin: 0;
     color: var(--text-dark);
     font-weight: 700;
@@ -352,9 +355,19 @@ h3 {
     gap: 5rem;
 }
 
+.why-img {
+    display: flex;
+    justify-content: center;
+}
+
 .why-img img {
     width: 100%;
-    border-radius: 30px;
+    max-width: 450px;
+    /* Constrain size */
+    aspect-ratio: 1/1;
+    /* Keep square */
+    object-fit: cover;
+    border-radius: 0;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 
@@ -544,7 +557,7 @@ h3 {
 }
 
 .space-content-pro h3 {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     font-family: var(--font-heading);
     /* Serif font */
     color: var(--primary-dark);

@@ -96,8 +96,8 @@ const Home = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                        <Link to="/booking" className="btn btn-primary">Book Space Now</Link>
-                        <Link to="/studios" className="btn btn-outline" style={{ color: 'white', borderColor: 'white' }}>View Studios</Link>
+                        <button onClick={() => document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })} className="btn btn-primary">Book Space Now</button>
+                        <button onClick={() => document.getElementById('studios').scrollIntoView({ behavior: 'smooth' })} className="btn btn-outline" style={{ color: 'white', borderColor: 'white' }}>View Studios</button>
                     </motion.div>
                 </div>
             </section>
@@ -146,38 +146,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Our Spaces Preview */}
-            <section className="spaces-preview bg-light">
-                <div className="container">
-                    <div className="section-header text-center">
-                        <h2>Our Spaces</h2>
-                        <p>Explore our thoughtfully designed environments</p>
-                    </div>
-                    <div className="spaces-grid">
-                        {spaces.map((space) => (
-                            <motion.div
-                                key={space.id}
-                                className="space-card"
-                                initial={{ opacity: 0, x: space.id % 2 === 0 ? 50 : -50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                whileHover={{ y: -10 }}
-                                transition={{ duration: 0.6 }}
-                            >
-                                <div className="space-img-wrapper">
-                                    <img src={space.img} alt={space.title} />
-                                </div>
-                                <div className="space-info">
-                                    <h3>{space.title}</h3>
-                                    <p>{space.desc}</p>
-                                    <Link to="/studios" className="link-arrow">Learn More <ArrowRight size={18} /></Link>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Why Choose Us */}
             <section className="why-us">
                 <div className="container why-grid">
@@ -203,7 +171,7 @@ const Home = () => {
                 <div className="container text-center">
                     <h2>Book Your Space Today</h2>
                     <p>Ready to host your next class or workshop? Secure your preferred slot now.</p>
-                    <Link to="/booking" className="btn btn-primary btn-lg">Book Space Now</Link>
+                    <button onClick={() => document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })} className="btn btn-primary btn-lg">Book Space Now</button>
                 </div>
             </section>
         </div>

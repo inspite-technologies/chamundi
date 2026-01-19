@@ -39,12 +39,27 @@
     grid-row: 1;
 }
 
+.studio-img {
+    display: flex;
+    justify-content: center;
+}
+
 .studio-img img {
     width: 100%;
-    aspect-ratio: 4/3;
+    max-width: 450px;
+    /* Reduced height by constraining width */
+    aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    /* Square shape normal */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.studio-content h2 {
+    font-size: 1.8rem;
+    /* Smaller title */
+    margin-bottom: 1rem;
+    color: var(--text-dark);
 }
 
 .capacity {

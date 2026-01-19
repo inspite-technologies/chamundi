@@ -1,13 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Studios from './pages/Studios';
 import Services from './pages/Services';
 import Booking from './pages/Booking';
-
 import About from './pages/About';
-
 
 function App() {
     return (
@@ -15,15 +13,21 @@ function App() {
             <div className="app-container">
                 <Header />
                 <main>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/studios" element={<Studios />} />
-                        <Route path="/services" element={<Services />} />
-
-                        <Route path="/booking" element={<Booking />} />
-                        <Route path="/about" element={<About />} />
-                    </Routes>
-
+                    <div id="home">
+                        <Home />
+                    </div>
+                    <div id="studios">
+                        <Studios />
+                    </div>
+                    <div id="services">
+                        <Services />
+                    </div>
+                    <div id="booking">
+                        <Booking />
+                    </div>
+                    <div id="about">
+                        <About />
+                    </div>
                 </main>
                 <Footer />
             </div>

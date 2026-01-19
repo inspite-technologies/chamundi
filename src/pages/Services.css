@@ -16,7 +16,8 @@
 .who-item {
     padding: 1.5rem;
     background: var(--accent-color);
-    border-radius: 12px;
+    border-radius: 0;
+    /* Square styling */
     margin-bottom: 1rem;
     font-size: 1.1rem;
     color: var(--text-dark);
@@ -25,7 +26,8 @@
 .booking-options {
     background: var(--white);
     padding: 3rem;
-    border-radius: 20px;
+    border-radius: 0;
+    /* Square styling */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(74, 124, 68, 0.1);
 }
@@ -57,7 +59,8 @@
 
 .package-card {
     background: var(--white);
-    border-radius: 20px;
+    border-radius: 0;
+    /* Square shape normal */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
@@ -71,10 +74,12 @@
 }
 
 .package-img {
-    height: 240px;
     width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
     overflow: hidden;
     position: relative;
+    border-radius: 0;
 }
 
 .package-img img {
@@ -100,8 +105,9 @@
 }
 
 .package-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    /* Smaller title */
+    margin-bottom: 1rem;
 }
 
 .package-card ul {
