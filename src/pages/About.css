@@ -4,7 +4,13 @@
 
 .about-img img {
     width: 100%;
-    border-radius: 30px;
+    max-width: 450px;
+    /* Constrain size to reduce height */
+    aspect-ratio: 1/1;
+    /* Square shape */
+    object-fit: cover;
+    border-radius: 0;
+    /* Sharp corners */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,7 +45,8 @@
     gap: 1.5rem;
     background: var(--white);
     padding: 1.5rem;
-    border-radius: 15px;
+    border-radius: 0;
+    /* Square styling */
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
@@ -77,21 +84,19 @@
 .contact-wrapper {
     background: var(--white);
     padding: 3rem;
-    border-radius: 30px;
+    border-radius: 0;
+    /* Square styling */
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
 }
 
-.connect-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+/* ... middle content ... */
 
 .connect-box,
 .visit-box {
     background: var(--white);
     padding: 2.5rem;
-    border-radius: 24px;
+    border-radius: 0;
+    /* Square styling */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(74, 124, 68, 0.05);
 }

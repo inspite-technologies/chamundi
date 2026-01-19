@@ -149,7 +149,26 @@
 
 @media (max-width: 576px) {
     .amenities-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem 0.5rem;
+        /* Reduced gap to fit 4 columns */
+    }
+
+    .amenity-icon {
+        width: 50px;
+        /* Smaller icons for mobile */
+        height: 50px;
+    }
+
+    .amenity-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .amenity-item span {
+        font-size: 0.75rem;
+        /* Smaller text */
+        line-height: 1.2;
     }
 }
 
@@ -161,7 +180,8 @@
     background: var(--primary-color);
     color: white;
     padding: 5rem;
-    border-radius: 40px;
+    border-radius: 0;
+    /* Square styling */
     position: relative;
     overflow: hidden;
 }
@@ -177,7 +197,9 @@
 }
 
 .badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: white;
     color: var(--primary-color);
     padding: 0.6rem 2rem;
@@ -186,6 +208,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 1.5rem;
+    text-align: center;
 }
 
 @media (max-width: 992px) {

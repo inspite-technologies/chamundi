@@ -70,6 +70,8 @@
 @media (max-width: 992px) {
     .grid-booking {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
+        /* Reduced from default 4rem */
     }
 }
 
