@@ -1,0 +1,157 @@
+.booking-header {
+    background-image: url('/images/outsideImage.jpg');
+}
+
+.grid-booking {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 4rem;
+}
+
+.booking-form-container {
+    background: var(--white);
+    padding: 3.5rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(74, 124, 68, 0.05);
+}
+
+.booking-form {
+    margin-top: 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-smooth);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(74, 124, 68, 0.1);
+}
+
+.btn-block {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.sidebar-box {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(74, 124, 68, 0.05);
+}
+
+.sidebar-box h3 {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.schedule-item {
+    padding: 1rem;
+    background: var(--accent-color);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.schedule-item.available {
+    background: white;
+    border-left-color: #ddd;
+    border: 1px dashed #ccc;
+}
+
+.schedule-item .time {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.schedule-item .event {
+    display: block;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+.sidebar-box ul,
+.sidebar-box ol {
+    padding-left: 1.2rem;
+}
+
+.sidebar-box li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.faq-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.faq-card h4 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+    .grid-booking {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form-container {
+        padding: 2rem;
+    }
+}
